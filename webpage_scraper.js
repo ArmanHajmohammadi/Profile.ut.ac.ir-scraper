@@ -1,7 +1,6 @@
 const axios = require("axios");
 const sqlite3 = require("sqlite3").verbose();
 
-// Function to create SQLite database and table
 function createDatabase() {
   const db = new sqlite3.Database("professors.db");
 
@@ -23,7 +22,6 @@ function createDatabase() {
   return db;
 }
 
-// Function to insert teacher data into the database
 function insertTeacherData(db, teacherData) {
   const stmt = db.prepare(`INSERT INTO professors (
     firstName, lastName, firstName_en_US, lastName_en_US, image, url, degree, email, organizations
@@ -46,7 +44,6 @@ function insertTeacherData(db, teacherData) {
   stmt.finalize();
 }
 
-// Function to fetch data from a URL and parse the response
 async function fetchDataFromURL(url) {
   try {
     const response = await axios.get(url);
@@ -62,7 +59,6 @@ async function fetchDataFromURL(url) {
   }
 }
 
-// Array of URLs to fetch data from
 const urls = [];
 
 for (let i = 1; i < 70; i++) {
@@ -71,12 +67,10 @@ for (let i = 1; i < 70; i++) {
   );
 }
 
-// Function to fetch data from multiple URLs
 async function fetchDataFromMultipleURLs() {
   for (const url of urls) {
     await fetchDataFromURL(url);
   }
 }
 
-// Call the function to fetch and save data
 fetchDataFromMultipleURLs();
