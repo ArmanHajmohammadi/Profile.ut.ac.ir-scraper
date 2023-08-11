@@ -1,0 +1,116 @@
+ALTER TABLE professors
+ADD COLUMN rate_id TEXT DEFAULT "";
+
+ALTER TABLE professors
+ADD COLUMN rate REAL DEFAULT 0.0;
+
+ALTER TABLE professors
+ADD COLUMN rate_number INTEGER DEFAULT 0;
+
+ALTER TABLE professors
+ADD COLUMN comment_id TEXT DEFAULT "";
+
+ALTER TABLE professors
+ADD COLUMN comment1 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment2 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment3 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment4 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment5 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment6 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment7 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment8 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment9 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment10 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment11 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment12 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment13 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment14 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment15 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment16 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment17 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment18 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment19 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment20 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment21 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment22 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment23 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment24 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment25 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment26 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment27 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment28 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment29 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment30 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment31 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment32 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment33 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment34 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment35 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment36 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment37 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment38 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment39 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment40 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment41 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment42 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment43 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment44 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment45 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment46 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment47 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment48 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment49 TEXT DEFAULT "";
+ALTER TABLE professors
+ADD COLUMN comment50 TEXT DEFAULT "";
+
+ALTER TABLE professors ADD COLUMN fullName TEXT;
+
+UPDATE professors SET fullName = firstName || ' ' || lastName;
